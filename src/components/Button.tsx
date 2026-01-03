@@ -21,7 +21,7 @@ export function Button({
       className={clsx(
         "inline-flex items-center justify-center px-4 py-2 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed rounded",
         {
-          'bg-black text-white hover:bg-gray-800 focus:ring-black': variant === 'primary',
+          'bg-brand text-white hover:bg-brand/90 focus:ring-brand': variant === 'primary',
           'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 focus:ring-gray-500': variant === 'secondary',
           'bg-red-600 text-white hover:bg-red-700 focus:ring-red-500': variant === 'danger',
         },

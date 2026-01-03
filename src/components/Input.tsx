@@ -20,7 +20,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         <input
           ref={ref}
           className={clsx(
-            "block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black sm:text-sm px-3 py-2 border outline-none",
+            "block w-full rounded-md border-border-subtle shadow-sm focus:border-brand focus:ring-brand sm:text-sm px-3 py-2 border outline-none",
             {
               'font-mono': variant === 'monospace',
               'border-red-500 focus:border-red-500 focus:ring-red-500': error,

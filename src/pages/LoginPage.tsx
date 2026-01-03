@@ -8,10 +8,10 @@ export function LoginPage() {
     const [showPassword, setShowPassword] = useState(false);
 
     return (
-        <div className="flex min-h-screen flex-col justify-center py-12 px-6 lg:px-8 bg-[#f6f7f8]">
+        <div className="flex min-h-screen flex-col justify-center py-12 px-6 lg:px-8 bg-background-subtle">
             <div className="sm:mx-auto sm:w-full sm:max-w-md">
                 <div className="flex justify-center mb-6">
-                    <div className="h-10 w-10 bg-[#2b8cee] rounded flex items-center justify-center text-white mr-3">
+                    <div className="h-10 w-10 bg-brand rounded flex items-center justify-center text-white mr-3">
                         <Terminal size={24} />
                     </div>
                     <h1 className="text-3xl font-bold tracking-tight text-slate-900 self-center font-sans">
@@ -63,7 +63,7 @@ export function LoginPage() {
                             </div>
                             <div className="flex items-center justify-end mt-2">
                                 <div className="text-sm">
-                                    <a href="#" className="font-medium text-[#2b8cee] hover:text-[#2b8cee]/80 transition-colors">
+                                    <a href="#" className="font-medium text-brand hover:text-brand/80 transition-colors">
                                         Forgot password?
                                     </a>
                                 </div>
@@ -73,7 +73,7 @@ export function LoginPage() {
                         <div>
                             <Button
                                 type="submit"
-                                className="w-full bg-[#2b8cee]! hover:bg-[#2b8cee]/90! py-3! text-sm! font-bold"
+                                className="w-full bg-brand! hover:bg-brand/90! py-3! text-sm! font-bold"
                             >
                                 Sign In
                             </Button>
@@ -102,7 +102,7 @@ export function LoginPage() {
 
                 <p className="mt-10 text-center text-sm text-slate-500">
                     Don't have an account?{' '}
-                    <Link to="/register" className="font-semibold leading-6 text-[#2b8cee] hover:text-[#2b8cee]/80 hover:underline transition-all">
+                    <Link to="/register" className="font-semibold leading-6 text-brand hover:text-brand/80 hover:underline transition-all">
                         Sign up
                     </Link>
                 </p>
